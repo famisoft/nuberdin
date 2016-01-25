@@ -9,6 +9,27 @@
 module.exports = {
 
   attributes: {
+    id:{
+      type: 'integer',
+      autoIncrement: true,
+      primaryKey: true,
+      required: true
+    },
+    plan:{
+      type: 'string',
+      unique: true,
+      required: true,
+      size: '150'
+    },
+    cantidad_usuarios: {
+      type: 'integer',
+      required: true
+    },
+    //Referencia a la tabla jardines
+    jardines:{
+      collection: 'jardines',
+      via: 'id_plan'
+    }
 
   }
 };
