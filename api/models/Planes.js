@@ -27,7 +27,7 @@ module.exports = {
     },
     //Referencia a la tabla jardines
     jardines:{
-      collection: 'jardines',
+      collection: 'jardin',
       via: 'id_plan'
     }
 
