@@ -1,11 +1,11 @@
 [
   {
-    "text": "Menu Heading",
+    "text": "Menu de Encabezado",
     "heading": "true",
     "translate": "sidebar.heading.HEADER"
   },
   {
-    "text": "Single View",
+    "text": "Simple Vista",
     "sref": "app.singleview",
     "icon": "fa fa-file-o",
     "translate": "sidebar.nav.SINGLEVIEW"

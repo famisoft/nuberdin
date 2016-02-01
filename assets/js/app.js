@@ -1,6 +1,6 @@
 /*!
  *
- * Angle - Bootstrap Admin App + AngularJS
+ * nuberdin - Bootstrap Admin App + AngularJS
  *
  * Version: 3.2.0
  * Author: @themicon_co
@@ -16,7 +16,7 @@
     'use strict';
 
     angular
-        .module('angle', [
+        .module('nuberdin', [
             'app.core',
             'app.routes',
             'app.sidebar',
@@ -552,7 +552,7 @@
                 // with resolve this fires only once
                 $timeout(function(){
                   deferred.resolve();
-                }, 3000);
+                }, 2000);
 
                 off();
               }
@@ -1108,7 +1108,7 @@
           $rootScope.user = {
             name:     'John',
             job:      'ng-developer',
-            picture:  'app/img/user/02.jpg'
+            picture:  '/img/user/02.jpg'
           };
 
           // Hides/show user avatar on sidebar
@@ -1144,7 +1144,7 @@
           suffix : '.json'
       });
 
-      $translateProvider.preferredLanguage('en');
+      $translateProvider.preferredLanguage('es_CO');
       $translateProvider.useLocalStorage();
       $translateProvider.usePostCompiling(true);
       $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
@@ -1171,7 +1171,7 @@
         // list of available languages
         available: {
           'en':       'English',
-          'es_AR':    'Español'
+          'es_CO':    'Español'
         },
         // display always the current ui language
         init: function () {
@@ -1629,7 +1629,7 @@
     angular
         .module('custom', [
             // request the the entire framework
-            'angle',
+            'nuberdin',
             // or just modules
             'app.core',
             'app.sidebar'
@@ -1638,7 +1638,7 @@
 })();
 
 // To run this code, edit file index.html or index.jade and change
-// html data-ng-app attribute from angle to myAppName
+// html data-ng-app attribute from nuberdin to myAppName
 // ----------------------------------------------------------------------
 
 (function() {
